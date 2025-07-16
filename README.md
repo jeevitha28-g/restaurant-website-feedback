@@ -77,16 +77,16 @@ node server/server.js
 Open `public/index.html` directly in your browser or serve it with a static server.
 
 ## ⚙️ Usage
--Visit the homepage to learn about the restaurant
--Navigate to the menu to view food items
--Fill in the feedback form on the feedback page
--On submission, the feedback is sent to the backend and stored in MySQL
+- Visit the homepage to learn about the restaurant
+- Navigate to the menu to view food items
+- Fill in the feedback form on the feedback page
+- On submission, the feedback is sent to the backend and stored in MySQL
 
 ## 💡 How It Works (Explanation)
--`feedback.html` contains a form with input fields for name, phone, and message
--On submit, JavaScript captures the data and sends it using `fetch()` to `/submit-feedback`
--`server.js` handles the POST request and inserts the data into the MySQL `feedback` table
--MySQL Workbench manages your database and can be used to view submitted entries
+- `feedback.html` contains a form with input fields for name, phone, and message
+- On submit, JavaScript captures the data and sends it using `fetch()` to `/submit-feedback`
+- `server.js` handles the POST request and inserts the data into the MySQL `feedback` table
+- MySQL Workbench manages your database and can be used to view submitted entries
 
 ## License
 This project is for learning and demonstration purposes. You are free to modify and reuse the code.
