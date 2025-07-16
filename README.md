@@ -24,12 +24,12 @@ restaurant-website/
 │ └── restaurant_db.sql # Database export (optional)
 ├── public/
 │ ├── index.html # Homepage
-│ ├── menu.html # Food items page
-│ ├── feedback.html # Feedback form page
+│ ├── about.html # About page
+│ ├── menu.html # Food item page
 │ ├── css/
-│ │ ├── style.css # General styles
-│ │ ├── menu.css # Menu-specific styles
-│ │ └── feedback.css # Feedback form styles
+│ │ ├── aboutstyle.css 
+│ │ ├── indextyle.css 
+│ │ └── menustyle.css
 │ └── images/ # Image assets
 ├── server/
 │ └── server.js # Express backend with MySQL connection
