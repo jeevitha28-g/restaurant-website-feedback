@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./css/indexstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<header>
+    <img src="./images/head.jpg">
+</header>
+
+<div class="topnav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="menu.html">MENU</a>
+    <a href="#footer">CONTACT</a>
+</div>
+
+<div class="home">
+    <h1><center>WELCOME TO OUR RESTAURANT</center></h1>
+    <div class="container">
+        <p> At Our Restaurant, we bring you a dining experience like no other. 
+        Our chefs craft each dish with fresh, locally sourced ingredients, blending flavors to create culinary masterpieces. 
+        Whether you're craving classic comfort food or adventurous new tastes, we have something to delight every palate.Step into a world of 
+        delicious flavors, warm hospitality, and unforgettable dining experiences. At Our Restaurant, we take pride in crafting dishes that bring 
+        joy to every bite. Our chefs use only the finest ingredients, ensuring that each meal is fresh, flavorful, and made with love.
+        Whether you're joining us for a family gathering, a romantic dinner, or a night out with friends, we are here to make your experience 
+        special. Our cozy ambiance, friendly service, and carefully curated menu are designed to make you feel right at home.
+        From comforting classics to innovative culinary creations, we invite you to indulge in a feast for the senses. Come and savor the tastes, 
+        the aromas, and the joy of great food shared with great company.
+        </p>
+    </div>
+    <div class="row">
+        <div class="box">
+            <img src="images/img1.avif">
+            <img src="images/img2.jpg">
+            <img src="images/img3.webp">
+            <img src="images/img4.jpg">
+            <img src="images/img5.jpg">
+            <img src="images/img6.avif">
+            <img src="images/img7.jpg">
+            <img src="images/img8.jpg">
+        </div>
+    </div>
+</div>
+
+
+<div class="feedback-container">
+    <h2>Feedback Form</h2>
+    <form id="feedback-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" required>
+    
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" required>
+    
+      <label for="message">Your Feedback</label>
+      <textarea id="message" rows="4" required></textarea>
+    
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+<footer id="footer">
+    <p style="font-size: 20px;color: #0066b2;"><b>ADDRESS</b></p>
+    <P>plot no, Main Rd,<br> 
+        xyz Nagar, Town/Village,<br> 
+        City, State</p>
+    <br>
+    <p style="font-size: 20px;color: #0066b2;"><b>OPENING HOURS</b></p>
+    <P>Monday To Sunday :<br> 
+        9.00am to 4.00pm and 7.00pm to 10.00pm</p>
+    <br>
+    <p style="font-size: 20px;color: #0066b2;"><b>FOR MORE DETAILS</b></p>
+    <p>Contact : 9876543210</p>
+</footer>
+
+
+<script>
+  document.getElementById('feedback-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = {
+      name: document.getElementById('name').value,
+      phone: document.getElementById('phone').value,
+      message: document.getElementById('message').value
+    };
+
+    const res = await fetch('http://localhost:3000/submit-feedback', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+    alert(result.message);
+  });
+</script>
+
+
+</body>
+</html>

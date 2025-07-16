@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.topnav{
+  background-color: #333;
+  display: flex;
+  justify-content: end;
+  position: sticky;
+  top: 0;
+}
+.topnav a{
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  cursor: pointer;
+}
+.topnav a:hover{
+  color: lightblue;
+}
+.home h1{
+  margin-top: 35px;
+  font-size: 50px; 
+}
+.home p{
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+.container{
+  margin: 20px;
+}
+.container h2{
+  color: #0066b2;
+}
+footer{
+  background: black;
+  padding: 20px;
+}
+footer p{
+  color: white;
+}
+form{
+  margin: 50px;
+}
+tr{
+  padding: 50px;
+}
+input{
+  width: 100%;
+  padding: 6px 20px;
+  margin: 8px 0;
+}
+textarea{
+  width: 100%;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-left: 55px;
+}
+.box img{
+  width: 350px;
+  height: 300px;
+}
+.checked {
+  color: orange;
+}
+.price{
+  margin-left: 20px;
+}
+button{
+  background-color: #0066b2;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 70%;
+  margin-top: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #0066b2;
+  color: white;
+  padding: 12px;
+  width: 100%; /* Make it full width of form */
+  max-width: 200px; /* Optional: control max width */
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto; /* Center it */
+}
+
+
+button:hover {
+  background-color: #338fd1;
+}
+
+
+
+@media(max-width: 700px){
+  header img{
+    height: 200px;
+    width: 485px;
+  }
+  .topnav a{
+    padding: 15px;
+  }
+  .home h1{
+    font-size: 26px;
+  }
+  h1{
+    font-size: 26px;
+  }
+  .home p{
+    font-size: 16px;
+  }
+  .row{
+    margin-left: 33px;
+  }
+  .box img{                                                                                                                                       
+    width: 210px;
+    height: 160px;
+  }
+}
+ 
